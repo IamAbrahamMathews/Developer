@@ -8,7 +8,7 @@ def find(k):
 	return result1
 
 
-a_string=input("Enter the string: g")
+a_string=input("Enter the string: ")
 print("Length of the string: ",len(a_string))
 for i in range(0,len(a_string)):
 	k=a_string[i]
