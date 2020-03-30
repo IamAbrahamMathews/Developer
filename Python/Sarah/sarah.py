@@ -17,7 +17,7 @@ def recordAudio():
     # Record Audio
     r = sr.Recognizer()
     with sr.Microphone() as source:
-    print("Say something!")
+    print("What's on your mind? Abraham")
     audio = r.listen(source)
 
     # Speech recognition using Google Speech Recognition
@@ -44,12 +44,12 @@ def sarah(data):
     if "where is" in data:
         data = data.split(" ")
         location = data[2]
-        speak("Hold on Frank, I will show you where " + location + " is.")
+        speak("Hold on Abraham, I will show you where " + location + " is.")
         os.system("chromium-browser https://www.google.nl/maps/place/" + location + "/&amp;")
 
-# initialization
+# initialization for the artificial intelligence 
 time.sleep(2)
-speak("Hi Frank, what can I do for you?")
+speak("Hi Abraham, what can I do for you?")
 while 1:
     data = recordAudio()
     sarah(data)
