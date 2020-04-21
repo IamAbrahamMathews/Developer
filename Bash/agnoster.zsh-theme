@@ -89,7 +89,7 @@ prompt_end() {
 # Context: user@hostname (who am I and where am I)
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black cyan "%(!.%{%F{cyan}%}.)abraham"
+    prompt_segment black cyan "%(!.%{%F{cyan}%}.)\ufadc %n"
   fi
 }
 
