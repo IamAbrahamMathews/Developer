@@ -3,4 +3,5 @@ def testing(num):
 		return (num-2)
 	return testing(testing(num+10))
 
-print(testing(30))
+number=int(input("Enter the number:"))
+print(testing(number))
